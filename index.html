@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CRUD Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Firebase CRUD & REST Project" />
+    <meta name="author" content="Rasmus Cederdorff" />
+    <link rel="stylesheet" href="app.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+</head>
+
+<body>
+    <header class="topbar">
+        <h1>CRUD Template</h1>
+    </header>
+    <main class="page">
+        <section id="posts-grid" class="grid-container"></section>
+        <form id="form-create" onsubmit="createPosts()">
+            <h2>Create</h2>
+            <input type="text" name="title" placeholder="Type a title" required>
+            <input type="text" name="body" placeholder="Type a body text" required>
+            <input type="url" name="url" placeholder="Paste an image URL" required>
+            <button>Create</button>
+        </form>
+
+        <form id="form-update">
+            <h2>Update</h2>
+            <input type="text" name="title" placeholder="Type a title" required>
+            <input type="text" name="body" placeholder="Type a body text" required>
+            <input type="url" name="url" placeholder="Paste an image URL" required>
+            <button>Update</button>
+        </form>
+    </main>
+    <!-- app js file -->
+    <script src="app.js"></script>
+</body>
+
+</html>
